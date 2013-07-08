@@ -7,6 +7,10 @@ angular.module('PrisonAdventureApp', [])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/hats', {
+        templateUrl: 'views/gameView1.html',
+        controller: 'GameViewCtrl1'
+      })
       .otherwise({
         redirectTo: '/'
       });
