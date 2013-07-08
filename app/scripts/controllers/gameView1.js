@@ -5,7 +5,7 @@ angular.module('PrisonAdventureApp')
     $http.get('scripts/dialogue/test.json').success(function(data){
 
       var str = data.text;
-      $scope.displayString = "";
+      $scope.displayString = '';
       console.log(typeof str);
       $scope.counter = 0;
       $timeout(function recurse(){
